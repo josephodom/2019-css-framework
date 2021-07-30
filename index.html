@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/css/ubiq.min.css">
+<script type="text/javascript" src="assets/js/stepInterval.js"></script>
+<script type="text/javascript" src="assets/js/ubiq.js"></script>
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('dummy-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+		
+		document.getElementById('dummy-form-success').removeAttribute('hidden');
+    });
+	
+	document.getElementById('dummy-form').addEventListener('reset', (e) => {
+        document.getElementById('dummy-form-success').setAttribute('hidden', 'hidden');
+    });
+});
+</script>
+<title>Ubiq.css</title>
+</head>
+
+<body class="bg-white-dark">
+
+<header id="header" class="default-header">
+	<section id="header-main">
+		<div class="container">
+			<h1 class="heading-small">
+				Ubiq.css Demo
+			</h1>
+		</div>
+	</section>
+	
+	<nav id="nav" class="default-nav">
+		<div class="container">
+			<ul>
+				<li>
+					<a href="#">
+						Top
+					</a>
+				</li>
+				
+				<li>
+					<a href="#flex-table">
+						Flex Table
+					</a>
+				</li>
+				
+				<li>
+					<a href="#form">
+						Forms
+					</a>
+				</li>
+				
+				<li>
+					<a href="#about">
+						About
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+
+
+<main id="main">
+
+<!-- HERO -->
+<section id="hero" class="full-screen display-flex align-items-center text-center" data-full-screen-except="#header,#callout">
+	<div class="container">
+		<div class="padding-vertical-large">
+			<h1 class="heading-x-large heading-xxx-large-large margin-bottom-medium">
+				Ubiq.css
+			</h1>
+			
+			<h2 class="headling-medium heading-large-large margin-bottom-x-large">
+				Use it everywhere!
+			</h2>
+			
+			<div>
+				<a href="ubiq.zip" class="button button-purple heading-small" target="_blank">
+					Download (29.8kb)
+				</a>
+			</div>
+		</div><!-- .padding-vertical -->
+	</div><!-- .container -->
+</section><!-- #hero -->
+
+<!-- CALLOUT -->
+<section id="callout" class="padding-vertical-large-large bg-brown subtle-shadow">
+	<div class="container">
+		<div class="flex-table align-items-center">
+			<div class="cell-12 cell-large-8 padding-vertical-medium padding-vertical-none-large text-center text-left-large">
+				<h1 class="heading-large text-uppercase">
+					This Is A Callout!
+				</h1>
+			</div><!-- .cell -->
+			
+			<div class="cell-12 cell-large-4 padding-vertical-medium padding-vertical-none-large text-center text-right-large">
+				<button type="button" class="button button-purple">
+					Click Me
+				</button>
+			</div><!-- .cell -->
+		</div><!-- .flex-table -->
+	</div><!-- .container -->
+</section><!-- #callout -->
+
+<!-- FLEX TABLE -->
+<section id="flex-table" class="padding-vertical-large bg-green">
+	<div class="container">
+		<h1 class="heading-medium">
+			Flex Table
+		</h1>
+
+		<p>
+			The <code>.flex-table</code> class is useful for creating responsive layouts, both simple &amp; elaborate!
+		</p>
+
+		<div class="flex-table">
+			<!-- ROW 1 -->
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			
+			<!-- ROW 2 -->
+			<div class="cell-2 display-none display-block-large"><div class="box-simple">2 / 12</div></div>
+			<div class="cell-2 display-none display-block-large"><div class="box-simple">2 / 12</div></div>
+			<div class="cell-2 display-none display-block-large"><div class="box-simple">2 / 12</div></div>
+			<div class="cell-2 display-none display-block-large"><div class="box-simple">2 / 12</div></div>
+			<div class="cell-2 display-none display-block-large"><div class="box-simple">2 / 12</div></div>
+			<div class="cell-2 display-none display-block-large"><div class="box-simple">2 / 12</div></div>
+			
+			<!-- ROW 3 -->
+			<div class="cell-3 display-none display-block-large"><div class="box-simple">3 / 12</div></div>
+			<div class="cell-3 display-none display-block-large"><div class="box-simple">3 / 12</div></div>
+			<div class="cell-3 display-none display-block-large"><div class="box-simple">3 / 12</div></div>
+			<div class="cell-3 display-none display-block-large"><div class="box-simple">3 / 12</div></div>
+			
+			<!-- ROW 4 -->
+			<div class="cell-4 display-none display-block-large"><div class="box-simple">4 / 12</div></div>
+			<div class="cell-4 display-none display-block-large"><div class="box-simple">4 / 12</div></div>
+			<div class="cell-4 display-none display-block-large"><div class="box-simple">4 / 12</div></div>
+			
+			<!-- ROW 5 -->
+			<div class="cell-6 display-none display-block-large"><div class="box-simple">6 / 12</div></div>
+			<div class="cell-6 display-none display-block-large"><div class="box-simple">6 / 12</div></div>
+			
+			<!-- ROW 6 -->
+			<div class="cell-12 display-none display-block-large"><div class="box-simple">12 / 12</div></div>
+			
+			<!-- ROW 7 -->
+			<div class="cell-7 display-none display-block-large"><div class="box-simple">7 / 12</div></div>
+			<div class="cell-5 display-none display-block-large"><div class="box-simple">5 / 12</div></div>
+			
+			<!-- ROW 8 -->
+			<div class="cell-3 display-none display-block-large"><div class="box-simple">3 / 12</div></div>
+			<div class="cell-1 display-none display-block-large"><div class="box-simple">1 / 12</div></div>
+			
+			<div class="cell-4 offset-4 display-none display-block-large">
+				<div class="box-simple">
+					4/12 (offset 3/12)
+				</div>
+			</div>
+			
+			<!-- ROW 9 -->
+			<div class="cell-12 cell-large-6">
+				<div class="box-simple">
+					Full on mobile, half on large
+				</div>
+			</div>
+			
+			<div class="cell-12 cell-large-6">
+				<div class="box-simple">
+					Full on mobile, half on large
+				</div>
+			</div>
+			
+			<!-- ROW 10 -->
+			<div class="cell-6 cell-large-3">
+				<div class="box-simple">
+					Half on mobile, Quarter on large
+				</div>
+			</div>
+			
+			<div class="cell-6 cell-large-3">
+				<div class="box-simple">
+					Half on mobile, Quarter on large
+				</div>
+			</div>
+			
+			<div class="cell-6">
+				<div class="box-simple">
+					Half on all
+				</div>
+			</div>
+			
+			<div class="cell-6 cell-large-12">
+				<div class="box-simple">
+					Half on mobile, full on large
+				</div>
+			</div>
+		</div><!-- .flex-table -->
+	</div><!-- .container -->
+</section><!-- #flex-table -->
+
+<!-- FORM -->
+<section id="form" class="padding-vertical-large">
+	<div class="container">
+		<h1 class="heading-medium margin-bottom-medium">
+			Forms
+		</h1>
+
+		<div class="box padding-medium">
+			<p class="text-purple-light">
+				<strong>Hello!</strong> This is an example form. Try filling it out, it doesn't actually go anywhere.
+			</p>
+			
+			<form id="dummy-form">
+				<div class="flex-table">
+					<div class="cell-12">
+						<div class="field-container margin-bottom-medium">
+							<h2 class="field-title">
+								Your Name*
+							</h2>
+							
+							<input type="text" name="your-name" class="field" placeholder="Your Name" required>
+						</div><!-- .field-container --->
+					</div><!-- .cell -->
+					
+					<div class="cell-12">
+						<div class="field-container margin-bottom-medium">
+							<h2 class="field-title">
+								Your Email*
+							</h2>
+							
+							<input type="email" name="your-email" class="field" placeholder="Your Email" required>
+						</div><!-- .field-container -->
+					</div><!-- .cell -->
+					
+					<div class="cell-12 cell-large-6">
+						<div class="field-container margin-bottom-medium">
+							<h2 class="field-title">
+								Choose One
+							</h2>
+							
+							<select name="option" class="field">
+								<option>---</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div><!-- .field-container -->
+					</div><!-- .cell -->
+					
+					<div class="cell-12 cell-large-6">
+						<div class="field-container margin-bottom-medium">
+							<h2 class="field-title">
+								Choose Another
+							</h2>
+							
+							<select name="option" class="field">
+								<option>---</option>
+								<option value="red">Red</option>
+								<option value="blue">Blue</option>
+								<option value="green">Green</option>
+							</select>
+						</div><!-- .field-container -->
+					</div><!-- .cell -->
+					
+					<div class="cell-12">
+						<div class="field-container margin-bottom-medium">
+							<h2 class="field-title">
+								Your Message
+							</h2>
+							
+							<textarea name="message" class="field" placeholder="What do you have to say?"></textarea>
+						</div>
+					</div><!-- .cell -->
+					
+					<div class="cell-12">
+						<button type="submit" class="button button-blue">
+							Submit
+						</button>
+						
+						<button type="button" class="button button-green" disabled>
+							Disabled
+						</button>
+						
+						<button type="reset" class="button button-gray">
+							Reset
+						</button>
+                        
+                        <p class="text-blue-dark" id="dummy-form-success" hidden>
+                            <strong>Success!</strong> The form worked.
+                        </p>
+					</div><!-- .cell -->
+				</div><!-- .flex-table -->
+			</form>
+		</div><!-- .box -->
+		
+		<hr>
+	</div><!-- .container -->
+</section><!-- #form -->
+
+<!-- ABOUT -->
+<section id="about" class="padding-vertical-large">
+	<div class="container">
+		<h1 class="heading-x-large">
+			So, What Is Ubiq.css?
+		</h1>
+		
+		<p>
+			Ubiq.css (short for ubiquitous &dash; you can use it everywhere!) is a custom, ground-up CSS framework (with
+			a little bit of vanilla JavaScript). You can use it to make robust, response website layouts quickly, as it
+			does a lot of boilerplate for you.
+		</p>
+		
+		<h2 class="heading-medium">
+			Why was this made?
+		</h2>
+		
+		<p>
+			Mostly, to show myself that I could! But also as a fun exercise in CSS/SASS, and to see what features I really find
+			to be most useful in a CSS framework.
+		</p>
+		
+		<h2 class="heading-medium">
+			What can it do, precisely?
+		</h2>
+		
+		<p>
+			Great question! Briefly,
+		</p>
+		
+		<ul>
+			<li>
+				It expands <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code> to at least <code>100%</code> of the browser height,
+				and if the page is less than the browser's height, it increases the size of <code>#main</code> to fill in any blank space
+			</li>
+			
+			<li>
+				It provides a <code>.container</code> class that snaps to a fixed width for each breakpoint. The maximum size is
+				<code>1440px</code>!
+			</li>
+			
+			<li>
+				It provides a <code>.flex-table</code> class, perhaps the most powerful tool for responsive layouts. Fill it with
+				<code>.cell-$</code> elements, which take up between one and twelve units wide, and respond to all breakpoints
+			</li>
+			
+			<li>
+				It creates <code>.text-$</code>, <code>.bg-$</code>, and <code>.button-$</code> classes for all registered colors (and classes
+				for all shades, except for <code>.button</code>)
+			</li>
+			
+			<li>
+				It creates <code>.padding-$</code> and <code>.margin-$</code> classes with modifiers for direction, size, and breakpoint
+			</li>
+		</ul>
+		
+		<h2 class="heading-medium">
+			What about the JavaScript?
+		</h2>
+		
+		<p>
+			There's a small amount of JavaScript in <code>ubiq.js</code>, and it has only one dependency: <code>stepInterval.js</code>, which is
+			a plugin that I wrote.
+		</p>
+		
+		<p>
+			JavaScript accomplishes a few small things:
+		</p>
+		
+		<ul>
+			<li>
+				Allowing <code>.full-screen</code> elements to have "exceptions"; that is, if the element doesn't naturally take up the full
+				screen height, then you can set elements that cut into the extra space to make room for themselves. An example is the hero
+				section on this very same web page; notice how the header above it &amp; the callout below it squeeze onto the screen, too
+			</li>
+			
+			<li>
+				Allowing you to click hash links in the navigation and, instead of snapping to it and adding the hash link to the URL, it slowly
+				scrolls to it. Notice also that it activates the nav link leading to an element when you scroll past it
+			</li>
+		</ul>
+		
+		<h2 class="heading-medium">
+			What is <code>stepInterval.js</code> for?
+		</h2>
+		
+		<p>
+			It's a function that creates &amp; returns a custom object that has an interval within an interval. It lets you set a function for when
+			the interval is finished, and also another function that runs every 5ms (or whenever you set it to) so you can perform in-between actions,
+			like perhaps a loading bar, or pausing the interval under certain conditions. It's used to animate the page scroll when you click a hash
+			link.
+		</p>
+	</div><!-- .container -->
+</section><!-- #about -->
+
+</main>
+
+
+
+<footer id="footer" class="default-footer">
+	<div class="container">
+		<h2>Example Footer</h2>
+		
+		<p>Example text</p>
+		
+		<hr>
+		
+		<p>&copy; 2021 Joseph Odom
+	</div>
+</footer>
+
+</body>
+
+</html>

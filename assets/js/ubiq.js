@@ -132,7 +132,7 @@ function scrollFromHash(_hash){
 	if(_hash){
 		let hash = document.querySelector(_hash);
 		
-		scrollTo = hash.getBoundingClientRect().top + window.pageYOffset - scrollGutter();
+		scrollTo = hash?.getBoundingClientRect().top + window.pageYOffset - scrollGutter();
 	}
 	
 	if(scrollTo > maxScroll){
